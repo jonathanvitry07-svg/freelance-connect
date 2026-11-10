@@ -20,8 +20,15 @@
                 <input type="file" id="upload" name="upload" accept=".png,.jpg" required>
             </fieldset>
             <fieldset>
-                <legend>Mot de passe</legend>
-                
+                <legend>Contact et profil</legend>
+                <label for="email">Adresse e-mail</label>
+                <input type="email" id="email" name="email" required>
+                <label for="phone">Numéro de téléphone</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+                <label for="portfolio">Portfolio</label>
+                <input type="url" id="portfolio" name="portfolio" placeholder="Ex : https://monportfolio.com">
+                <label for="color">Couleur</label>
+                <input type="color" id="color" name="color" value="#3eaca5">
             </fieldset>
             <fieldset>
                 <legend>Connexion</legend>
