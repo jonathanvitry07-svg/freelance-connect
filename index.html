@@ -20,7 +20,7 @@
                 <input type="file" id="upload" name="upload" accept=".png,.jpg" required>
             </fieldset>
             <fieldset>
-                <legend>Contact et profil</legend>
+                <legend>Contact & profil</legend>
                 <label for="email">Adresse e-mail</label>
                 <input type="email" id="email" name="email" required>
                 <label for="phone">Numéro de téléphone</label>
@@ -31,13 +31,36 @@
                 <input type="color" id="color" name="color" value="#3eaca5">
             </fieldset>
             <fieldset>
-                <legend>Connexion</legend>
-                <label for="password">Mot de passe</label>
-                <input type="password" id="password" name="password" required>
-                <button type="submit">Se connecter</button>
+                <legend>Informations professionnelles</legend> 
+                <label for="experiences">Expériences</label>
+                <input type="number" id="experiences" name="experiences" min="0" max="50" required>
+                <label for="tjm">Taux Journalier Moyen</label>
+                <input type="number" id="tjm" name="tjm" step="50" required>
+                <label for="seniorite">Niveau de seniorité estimé</label>
+                <input type="range" id="seniorite" name="seniorite" min="1" max="5" required>
+            <div>
+                <label for="language">Langages maîtrisés</label>
+                <input type="checkbox" id="language" name="language" value="Python" checked>Python
+                <input type="checkbox" id="language" name="language" value="HTML">HTML
+                <input type="checkbox" id="language" name="language" value="CSS">CSS
+                <input type="checkbox" id="language" name="language" value="JavaScript" >JavaScript
+            </div>
+            <div>
+                <label for="status">Statut juridique</label>
+                <input type="radio" id="status" name="status" value="auto-entrepreneur" checked>Auto-entrepreneur 
+                <input type="radio" id="status" name="status" value="sasu">SASU
+                <input type="radio" id="status" name="status" value="eurl">EURL
+            </div>
+                <label for="region">Région d'intervention</label>
+                <select type="select" id="region" name="region" required>
+                    <optgroup name="Sélectionnez une région">
+                        <option value="nord">Groupe Nord</option>
+                        <option value="sud">Groupe Sud</option>
+                    </optgroup>
+                </select>
             </fieldset>
             <fieldset>
-                <legend>Inscription</legend>
+                <legend>Disponibité et finalisations</legend>
                 <label for="new-username">Nom d'utilisateur</label>
                 <input type="text" id="new-username" name="new-username" required>
                 <label for="new-password">Mot de passe</label>
