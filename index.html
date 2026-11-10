@@ -8,14 +8,20 @@
     <body>
         <form action="/traitement" method="post" enctype="multipart/form-data">
             <fieldset>
-                <legend>Connexion</legend>
-                <label for="username">Nom d'utilisateur</label>
-                <input type="text" id="username" name="username" required>
+                <legend>Identité</legend>
+                <input type="hidden" name="source" value="inscription_web">
+                <label for="firstname">Nom</label>
+                <input type="text" id="firstname" name="firstname" placeholder="Ex : Doe" required>
+                <label for="lastname">Prénom</label>
+                <input type="text" id="lastname" name="lastname" placeholder="Ex : John" autofocus required>
+                <label for="password">Mot de passe</label>
+                <input type="password" id="password" name="password" minlength="8" required>
+                <label for="upload">Photo de profil</label>
+                <input type="file" id="upload" name="upload" accept=".png,.jpg" required>
             </fieldset>
             <fieldset>
                 <legend>Mot de passe</legend>
-                <label for="password">Mot de passe</label>
-                <input type="password" id="password" name="password" required>
+                
             </fieldset>
             <fieldset>
                 <legend>Connexion</legend>
