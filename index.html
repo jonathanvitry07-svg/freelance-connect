@@ -2,9 +2,41 @@
 <html lang="fr">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
         <title>Freelance Connect</title>
     </head>
     <body>
+        <form action="/traitement" method="post" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Connexion</legend>
+                <label for="username">Nom d'utilisateur</label>
+                <input type="text" id="username" name="username" required>
+            </fieldset>
+            <fieldset>
+                <legend>Mot de passe</legend>
+                <label for="password">Mot de passe</label>
+                <input type="password" id="password" name="password" required>
+            </fieldset>
+            <fieldset>
+                <legend>Connexion</legend>
+                <label for="password">Mot de passe</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Se connecter</button>
+            </fieldset>
+            <fieldset>
+                <legend>Inscription</legend>
+                <label for="new-username">Nom d'utilisateur</label>
+                <input type="text" id="new-username" name="new-username" required>
+                <label for="new-password">Mot de passe</label>
+                <input type="password" id="new-password" name="new-password" required>
+                <button type="submit">S'inscrire</button>
+            </fieldset>
+            <fieldset>
+                <legend>Mot de passe oublié</legend>
+                <label for="forgot-password">Adresse e-mail</label>
+                <input type="email" id="forgot-password" name="forgot-password" required>
+                <button type="submit">Réinitialiser le mot de passe</button>
+            
         <h1>Bienvenue sur Freelance Connect</h1>
         <p>Connectez-vous avec des freelances talentueux pour vos projets.</p>
     </body>
