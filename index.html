@@ -61,19 +61,23 @@
             </fieldset>
             <fieldset>
                 <legend>Disponibité et finalisations</legend>
-                <label for="new-username">Nom d'utilisateur</label>
-                <input type="text" id="new-username" name="new-username" required>
-                <label for="new-password">Mot de passe</label>
-                <input type="password" id="new-password" name="new-password" required>
-                <button type="submit">S'inscrire</button>
+                <label for="dispo">Date de disponibilité</label>
+                <input type="date" id="dispo" name="dispo" required>
+            <div>
+                <label for="audit">Dernier audit réalisé</label>
+                <input type="text" id="audit" name="audit" disabled value="Aucun audit réalisé">
+            </div>
+            <div>
+                <label for="motivation">Motivation</label>
+                <textarea id="motivation" name="motivation" rows="8" maxlength="500"></textarea>
+            </div>
+            <div>
+                <label for="cgu">CGU</label>
+                <input type="checkbox" id="cgu" name="cgu" required>Accepter les conditions générales d'utilisation
+            </div>
+            <button type="submit">Envoyer</button>
+            <button type="reset">Réinitialiser</button>
             </fieldset>
-            <fieldset>
-                <legend>Mot de passe oublié</legend>
-                <label for="forgot-password">Adresse e-mail</label>
-                <input type="email" id="forgot-password" name="forgot-password" required>
-                <button type="submit">Réinitialiser le mot de passe</button>
-            
-        <h1>Bienvenue sur Freelance Connect</h1>
-        <p>Connectez-vous avec des freelances talentueux pour vos projets.</p>
+        </form>
     </body>
 </html>
