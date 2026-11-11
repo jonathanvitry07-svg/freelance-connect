@@ -33,27 +33,27 @@
             <fieldset>
                 <legend>Informations professionnelles</legend> 
                 <label for="experiences">Expériences</label>
-                <input type="number" id="experiences" name="experiences" min="0" max="50" required>
+                <input type="number" id="experiences" name="experiences" min="0" max="50" >
                 <label for="tjm">Taux Journalier Moyen</label>
                 <input type="number" id="tjm" name="tjm" step="50" required>
                 <label for="seniorite">Niveau de seniorité estimé</label>
-                <input type="range" id="seniorite" name="seniorite" min="1" max="5" required>
+                <input type="range" id="seniorite" name="seniorite" min="1" max="5" >
             <div>
-                <label for="language">Langages maîtrisés</label>
-                <input type="checkbox" id="language" name="language" value="Python" checked>Python
-                <input type="checkbox" id="language" name="language" value="HTML">HTML
-                <input type="checkbox" id="language" name="language" value="CSS">CSS
-                <input type="checkbox" id="language" name="language" value="JavaScript" >JavaScript
+                <label>Langages maîtrisés</label>
+                <input type="checkbox" id="lang0" name="language" value="Python" checked>Python
+                <input type="checkbox" id="lang1" name="language" value="HTML">HTML
+                <input type="checkbox" id="lang2" name="language" value="CSS">CSS
+                <input type="checkbox" id="lang3" name="language" value="JavaScript" >JavaScript
             </div>
             <div>
-                <label for="status">Statut juridique</label>
-                <input type="radio" id="status" name="status" value="auto-entrepreneur" checked>Auto-entrepreneur 
-                <input type="radio" id="status" name="status" value="sasu">SASU
-                <input type="radio" id="status" name="status" value="eurl">EURL
+                <label>Statut juridique</label>
+                <input type="radio" id="status1" name="status" value="auto-entrepreneur" checked>Auto-entrepreneur 
+                <input type="radio" id="status2" name="status" value="sasu">SASU
+                <input type="radio" id="status3" name="status" value="eurl">EURL
             </div>
-                <label for="region">Région d'intervention</label>
-                <select type="select" id="region" name="region" required>
-                    <optgroup name="Sélectionnez une région">
+                <label>Région d'intervention</label>
+                <select>
+                    <optgroup label="Régions dintervention">
                         <option value="nord">Groupe Nord</option>
                         <option value="sud">Groupe Sud</option>
                     </optgroup>
